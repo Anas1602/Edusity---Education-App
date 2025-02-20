@@ -1,13 +1,21 @@
+/* eslint-disable react/prop-types */
 import "./About.css";
 import about_img from "../../assets/about.png";
 import play_icon from "../../assets/play-icon.png";
 
-const About = () => {
+const About = ({ setPlay }) => {
   return (
     <div className="about">
       <div className="about-left">
         <img className="about-img" src={about_img} alt="" />
-        <img className="play-icon" src={play_icon} alt="" />
+        <img
+          onClick={() => {
+            setPlay(true);
+          }}
+          className="play-icon"
+          src={play_icon}
+          alt=""
+        />
       </div>
 
       <div className="about-right">

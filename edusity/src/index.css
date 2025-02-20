@@ -37,6 +37,12 @@ a {
   justify-content: center;
 }
 
+.btn:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 .btn img {
   width: 20px;
   margin-left: 10px;
@@ -45,4 +51,15 @@ a {
 .btn.dark-btn {
   background-color: #212ea0;
   color: white;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn {
+    padding: 14px 22px;
+  }
 }
